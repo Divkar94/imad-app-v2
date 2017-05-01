@@ -61,6 +61,7 @@ var htmltemplate =
     <div>
        ${content}
     </div>
+    <hr/>
     </div>
 </body>
 </html>`;
