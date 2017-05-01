@@ -18,7 +18,7 @@ var articles ={
             This is the contect of my first article. How is it? This is the contect of my first article. How is it? This is the contect of my first article. How is it?. This is the contect of my first article. How is it?. This is the contect of my first article. How is it?This is the contect of my first article. How is it?
     </p>
     `,
-    comment_section : `<input type="text" id="com1" placeholder="Type your comments here"></input>
+    comment_section : `<input type="text" id="com1" height ="60px" width="20px" placeholder="Type your comments here"></input>
                        <input type="Submit" id="sub1" value="Submit"></input>
                        <ul id="art1comments">
                        <ul>
@@ -89,6 +89,18 @@ app.get('/submit-name',function(req,res){//URL /submit-name?name=xxx
    var name=req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
+});
+var comments1=[];
+app.get('/artOne-comment1',function(req,res){//URL /submit-name?name=xxx
+   var comment1=req.query.comment1;
+   comments1.push(comment1);
+   res.send(JSON.stringify(comments1));
+});
+var comments2=[];
+app.get('/artTwo-comment2',function(req,res){//URL /submit-name?name=xxx
+   var comment2=req.query.comment2;
+   comments2.push(comment2);
+   res.send(JSON.stringify(comments2));
 });
 var counter =0;
 app.get('/counter', function (req, res) {
