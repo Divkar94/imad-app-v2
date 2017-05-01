@@ -18,7 +18,7 @@ var articles ={
             This is the contect of my first article. How is it? This is the contect of my first article. How is it? This is the contect of my first article. How is it?. This is the contect of my first article. How is it?. This is the contect of my first article. How is it?This is the contect of my first article. How is it?
     </p>
     `,
-    comment_section : `<input type="text" id="com1" height ="60px" width="20px" placeholder="Type your comments here"></input>
+    comment_section : `<input type="text" id="com1" placeholder="Type your comments here"></input>
                        <input type="Submit" id="sub1" value="Submit"></input>
                        <ul id="art1comments">
                        <ul>
