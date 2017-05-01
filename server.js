@@ -40,7 +40,7 @@ var articles ={
     comment_section : `<input type="text" id="com2" placeholder="Type your comments here"></input>
                        <input type="Submit" id="sub2" value="Submit"></input>
                        <ul id="art2comments">
-                       <ul>
+                       <ul>`
 }};
 function createTemplate (data){
 var title=data.title;
@@ -49,7 +49,7 @@ var date=data.date;
 var content=data.content;
 var comment_section=data.comment_section;
 var htmltemplate = 
-   ` <html>
+   `<html>
 <head>
     <title>
         ${title}
@@ -77,7 +77,7 @@ var htmltemplate =
     </div>
     ${comment_section}
 </body>
-</html>`;
+</html>`
 return htmltemplate;
 }
 
