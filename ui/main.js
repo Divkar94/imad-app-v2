@@ -38,7 +38,7 @@ var Name =nameInput.value;
   request.send(null);
   };
   
-  
+/*  
   var sub1=document.getElementById('sub1');
 sub1.onclick=function(){
 var com1input = document.getElementById('com1');
@@ -61,4 +61,4 @@ var comment1=com1input.value;
   }
   request.open('GET','http://divkar94.imad.hasura-app.io/artOne-comment1?comment1='+ comment1,true);
   request.send(null);
-  };
+  };*/
