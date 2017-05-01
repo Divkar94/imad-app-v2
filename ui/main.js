@@ -18,8 +18,11 @@ var nameInput = document.getElementById('Name');
 var Name =nameInput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
-  
-  var names=['name1','name2','name3'];
+  var request=new XMLHttpRequest();
+  request.onreadystatechange=function(){
+  if(request.readystate===XMLHttpRequest.DONE){
+      if(request.status===200){
+         var names=['name1','name2','name3'];
   var list='';
   for (var i=0;i<names.length;i++)
   {
@@ -27,4 +30,9 @@ submit.onclick=function(){
   }
   var ul= document.getElementById('namelist');
   ul.innerHTML=list;
-}
+      }
+   }
+  }
+  request.open('GET','http://divkar94.imad.hasura-app.io/submit-name?name='+name,true);
+  request.send(null);
+  };
