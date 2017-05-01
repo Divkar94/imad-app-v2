@@ -14,9 +14,9 @@ button.onclick = function(){
     request.open('GET','http://divkar94.imad.hasura-app.io/counter',true);
     request.send(null);
 }
-var nameInput = document.getElementById('Name');
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
+var nameInput = document.getElementById('Name');
 var Name =nameInput.value;
   var request=new XMLHttpRequest();
   request.onreadystatechange=function(){
