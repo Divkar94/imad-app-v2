@@ -37,3 +37,28 @@ var Name =nameInput.value;
   request.open('GET','http://divkar94.imad.hasura-app.io/submit-name?name='+ Name,true);
   request.send(null);
   };
+  
+  
+  var sub1=document.getElementById('sub1');
+sub1.onclick=function(){
+var com1input = document.getElementById('com1');
+var comment1=com1input.value;
+  var request=new XMLHttpRequest();
+  request.onreadystatechange=function(){
+  if(request.readyState===XMLHttpRequest.DONE){
+      if(request.status===200){
+      var comments1= request.responseText;
+      comments1=JSON.parse(comments1);
+      var list='';
+  for (var i=0;i<comments1.length;i++)
+  {
+      list+='<li>'+comments1[i]+'</li>';
+  }
+  var ul= document.getElementById('art1comments');
+  ul.innerHTML=list;
+      }
+   }
+  }
+  request.open('GET','http://divkar94.imad.hasura-app.io/artOne-comment1?comment1='+ comment1,true);
+  request.send(null);
+  };
