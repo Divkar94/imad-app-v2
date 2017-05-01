@@ -17,7 +17,13 @@ var articles ={
     <p>
             This is the contect of my first article. How is it? This is the contect of my first article. How is it? This is the contect of my first article. How is it?. This is the contect of my first article. How is it?. This is the contect of my first article. How is it?This is the contect of my first article. How is it?
     </p>
-    `
+    `,
+    comment_section : `<input type="text" id="com1" placeholder="Type your comments here"></input>
+                       <input type="Submit" id="sub1" value="Submit"></input>
+                       <ul id="art1comments">
+                       <ul>
+                       `
+    
 },
 'article-two' : {
     title : 'Article Two | Div',
@@ -30,13 +36,18 @@ var articles ={
         <p>
             This is the contect of my first article. How is it? This is the contect of my first article. How is it? This is the contect of my first article. How is it?. This is the contect of my first article. How is it?. This is the contect of my first article. How is it?This is the contect of my first article. How is it?
         </p>
-    `
+    `,
+    comment_section : `<input type="text" id="com2" placeholder="Type your comments here"></input>
+                       <input type="Submit" id="sub2" value="Submit"></input>
+                       <ul id="art2comments">
+                       <ul>
 }};
 function createTemplate (data){
 var title=data.title;
 var Heading=data.Heading;
 var date=data.date;
 var content=data.content;
+var comment_section=data.comment_section;
 var htmltemplate = 
    ` <html>
 <head>
@@ -64,6 +75,7 @@ var htmltemplate =
     <hr/>
     <h5>Comment below!</h5>
     </div>
+    ${comment_section}
 </body>
 </html>`;
 return htmltemplate;
