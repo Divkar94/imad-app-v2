@@ -34,6 +34,6 @@ submit.onclick=function(){
       }
    }
   }
-  request.open('GET','http://divkar94.imad.hasura-app.io/submit-name?name='+ name,true);
+  request.open('GET','http://divkar94.imad.hasura-app.io/submit-name?name='+ Name,true);
   request.send(null);
   };
