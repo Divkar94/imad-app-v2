@@ -1,7 +1,7 @@
 console.log('Loaded!');
 alert('Yo!');
-var element = document.getElementById('main-text');
-element.innerHTML = 'New Value';
+//var element = document.getElementById('main-text');
+//element.innerHTML = 'New Value';
 var img = document.getElementById('madi');
 var marginleft=0;
 function moveRight(){
