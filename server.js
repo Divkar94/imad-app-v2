@@ -62,6 +62,7 @@ var htmltemplate =
        ${content}
     </div>
     <hr/>
+    <h5>Comment below!</h5>
     </div>
 </body>
 </html>`;
