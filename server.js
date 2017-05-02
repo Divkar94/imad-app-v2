@@ -40,6 +40,7 @@ var articles ={
     comment_section : `<input type="text" id="com2" placeholder="Type your comments here"></input>
                        <input type="submit" id="sub2" value="Submit"></input>
                        <ul id="art2comments">
+                       
                        </ul>`
 }};
 function createTemplate (data){
