@@ -42,7 +42,7 @@ var Name =nameInput.value;
   var subOne=document.getElementById('subOne');
 subOne.onclick=function(){
     alert('Im in');
-var com1input = document.getElementById('com1');
+/*var com1input = document.getElementById('com1');
 var comment1=com1input.value;
   var request=new XMLHttpRequest();
   request.onreadystatechange=function(){
@@ -61,5 +61,5 @@ var comment1=com1input.value;
    }
   }
   request.open('GET','http://divkar94.imad.hasura-app.io/artOne-comment1?comment1='+ comment1,true);
-  request.send(null);
+  request.send(null); */
   };
