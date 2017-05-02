@@ -19,7 +19,7 @@ var articles ={
     </p>
     `,
     comment_section : `<input type="text" id="com1" placeholder="Type your comments here"></input>
-                       <input type="Submit" id="sub1" value="Submit"></input>
+                       <input type="submit" id="sub1" value="Submit"></input>
                        <ul id="art1comments">
                        </ul>
                        `
