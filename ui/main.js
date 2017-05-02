@@ -1,5 +1,5 @@
 // Counter part
-/*var button=document.getElementById('counter');
+var button=document.getElementById('counter');
 button.onclick = function(){
     var request =new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -37,11 +37,9 @@ var Name =nameInput.value;
   request.open('GET','http://divkar94.imad.hasura-app.io/submit-name?name='+ Name,true);
   request.send(null);
   };
-  
-*/
+
   var subOne=document.getElementById('subOne');
 subOne.onclick=function(){
-    alert('Im in');
 var com1input = document.getElementById('com1');
 var comment1=com1input.value;
   var request=new XMLHttpRequest();
