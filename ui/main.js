@@ -16,6 +16,7 @@ button.onclick = function(){
 }
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
+    alert('Im in');
 var nameInput = document.getElementById('Name');
 var Name =nameInput.value;
   var request=new XMLHttpRequest();
