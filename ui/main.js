@@ -16,7 +16,6 @@ button.onclick = function(){
 }
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
-    alert('Im in');
 var nameInput = document.getElementById('Name');
 var Name =nameInput.value;
   var request=new XMLHttpRequest();
@@ -40,8 +39,8 @@ var Name =nameInput.value;
   };
   
 
-  var sub1=document.getElementById('sub1');
-sub1.onclick=function(){
+  var subOne=document.getElementById('subOne');
+subOne.onclick=function(){
     alert('Im in');
 var com1input = document.getElementById('com1');
 var comment1=com1input.value;
