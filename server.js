@@ -77,6 +77,8 @@ var htmltemplate =
     <h5>Comment below!</h5>
     </div>
     ${comment_section}
+    <script type="text/javascript" src="/ui/main.js">
+        </script>
 </body>
 </html>`
 return htmltemplate;
