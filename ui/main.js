@@ -41,6 +41,7 @@ var Name =nameInput.value;
 
   var sub1=document.getElementById('sub1');
 sub1.onclick=function(){
+    alert('Im in');
 var com1input = document.getElementById('com1');
 var comment1=com1input.value;
   var request=new XMLHttpRequest();
